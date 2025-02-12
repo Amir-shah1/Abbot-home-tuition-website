@@ -44,3 +44,14 @@
     
 })(jQuery);
 
+// code for showing google form for student and tutor
+
+document.getElementById("role").addEventListener("change", function() {
+    var selectedRole = this.value;
+    if(selectedRole == 1) {
+        document.getElementById("submit-button").href = "https://forms.gle/atwqFJNmf26JLehK7"
+    } else if (selectedRole == 2) {
+        document.getElementById("submit-button").href = "https://forms.gle/atwqFJNmf26JLehK7"
+    }
+
+})
