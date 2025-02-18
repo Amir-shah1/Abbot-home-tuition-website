@@ -27,10 +27,10 @@
             $('.back-to-top').fadeOut('slow');
         }
     });
-    $('.back-to-top').click(function () {
-        $('html, body').animate({scrollTop: 0}, 1500, 'easeInOutExpo');
-        return false;
-    });
+    // $('.back-to-top').click(function () {
+    //     $('html, body').animate({scrollTop: 0}, 1500, 'easeInOutExpo');
+    //     return false;
+    // });
 
 
     // Testimonials carousel
@@ -44,14 +44,21 @@
     
 })(jQuery);
 
-// code for showing google form for student and tutor
 
-document.getElementById("role").addEventListener("change", function() {
-    var selectedRole = this.value;
-    if(selectedRole == 1) {
-        document.getElementById("submit-button").href = "https://forms.gle/atwqFJNmf26JLehK7"
-    } else if (selectedRole == 2) {
-        document.getElementById("submit-button").href = "https://forms.gle/atwqFJNmf26JLehK7"
+// code for showing google form for student and tutor
+const dropdown = document.getElementById("role");
+const submitBtn = document.getElementById("sumbit-button");
+
+submitBtn.addEventListener("click", function(event) {
+    event.preventDefault();
+    const selectValue = dropdown.value;
+    if(selectValue == "1"){
+        window.location.href = "https://forms.gle/KrPS2zQfvPtvpsGh8";
+    } else if (selectValue == "2") {
+        window.location.href = "https://forms.gle/atwqFJNmf26JLehK7";
     }
 
-})
+});
+
+
+
