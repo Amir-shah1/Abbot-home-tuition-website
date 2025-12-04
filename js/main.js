@@ -45,7 +45,6 @@
 })(jQuery);
 
 
-// code for showing google form for student and tutor
 const dropdown = document.getElementById("role");
 const submitBtn = document.getElementById("sumbit-button");
 
@@ -53,9 +52,9 @@ submitBtn.addEventListener("click", function(event) {
     event.preventDefault();
     const selectValue = dropdown.value;
     if(selectValue == "1"){
-        window.location.href = "https://forms.gle/KrPS2zQfvPtvpsGh8";
+        window.location.href = "student_form.php";
     } else if (selectValue == "2") {
-        window.location.href = "https://forms.gle/atwqFJNmf26JLehK7";
+        window.location.href = "teacher_form.php";
     }
 
 });
