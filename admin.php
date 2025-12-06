@@ -267,7 +267,7 @@ $all_teachers = $conn->query("SELECT * FROM teachers");
         <div class="login-container">
             <div class="login-card">
                 <div class="text-center mb-4">
-                    <h2 class="mb-2"><span class="text-primary">Abbott</span> Tuitions</h2>
+                    <h2 class="mb-2" style="font-weight: bold;"><span class="text-primary">Abbott</span> Tuitions</h2>
                     <p class="text-muted">Admin Panel Login</p>
                 </div>
 
@@ -300,7 +300,7 @@ $all_teachers = $conn->query("SELECT * FROM teachers");
                         <i class="fa fa-sign-in-alt mr-2"></i>Login
                     </button>
                     <div class="text-center mt-3">
-                        <small class="text-muted">Default: admin / admin123</small>
+                        <small class="text-muted"></small>
                     </div>
                 </form>
             </div>
