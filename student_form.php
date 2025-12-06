@@ -80,6 +80,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         }
 
         body {
+            margin: 0;
+            font-family: "Poppins", sans-serif;
+            font-size: 1rem;
+            font-weight: 1500;
+            line-height: 1.5;
+            color: #6C6A74;
+            text-align: left;
             font-family: 'Poppins', sans-serif;
             background-color: #f8f9fa;
         }
@@ -151,7 +158,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <div class="container-fluid d-none d-lg-block">
         <div class="row align-items-center py-4 px-xl-5">
             <div class="col-lg-3">
-                <a href="index.html" class="text-decoration-none">
+                <a href="" class="text-decoration-none">
                     <h2 class="m-0"><span class="text-primary">Abbott </span>Tuitions</h2>
                 </a>
             </div>
@@ -178,7 +185,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                     <i class="fa fa-2x fa-phone text-primary mr-3"></i>
                     <div class="text-left">
                         <h6 class="font-weight-semi-bold mb-1">Call Us</h6>
-                        <a href="https://wa.me/+923190964392"><small>+92 319 0964392</small></a>
+                        <a href="https://wa.me/+92 319 0964392"><small >+92 319 0964392</small></a>
                     </div>
                 </div>
             </div>
@@ -196,17 +203,17 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 </a>
                 <nav class="collapse position-absolute navbar navbar-vertical navbar-light align-items-start p-0 border border-top-0 border-bottom-0 bg-light" id="navbar-vertical" style="width: calc(100% - 30px); z-index: 9;">
                     <div class="navbar-nav w-100">
-                        <a href="#" class="nav-item nav-link">Computer Science</a>
-                        <a href="#" class="nav-item nav-link">Quranic Studies</a>
-                        <a href="#" class="nav-item nav-link">Language Art</a>
-                        <a href="#" class="nav-item nav-link">Mathematics</a>
-                        <a href="#" class="nav-item nav-link">Science</a>
+                        <a href="" class="nav-item nav-link">Computer Science</a>
+                        <a href="" class="nav-item nav-link">Quranic Studies</a>
+                        <a href="" class="nav-item nav-link">Language Art</a>
+                        <a href="" class="nav-item nav-link">Mathematics</a>
+                        <a href="" class="nav-item nav-link">Science</a>
                     </div>
                 </nav>
             </div>
             <div class="col-lg-9">
                 <nav class="navbar navbar-expand-lg bg-light navbar-light py-3 py-lg-0 px-0">
-                    <a href="index.html" class="text-decoration-none d-block d-lg-none">
+                    <a href="" class="text-decoration-none d-block d-lg-none">
                         <h1 class="m-0"><span class="text-primary">Abbott</span> Tuitions</h1>
                     </a>
                     <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
@@ -216,11 +223,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                         <div class="navbar-nav py-0">
                             <a href="index.html" class="nav-item nav-link font-weight-semi-bold ml-2">Home</a>
                             <a href="about.html" class="nav-item nav-link font-weight-semi-bold ml-2">About</a>
-                            <a href="teacher_form.php" class="nav-item nav-link font-weight-semi-bold ml-2">Teacher</a>
-                            <a href="admin.php" class="nav-link nav-item font-weight-semi-bold ml-2">Admin</a>
+                            <a href="student_form.php" class="nav-item nav-link font-weight-semi-bold ml-2">Students Reg</a>
+                            <a href="teacher_form.php" class="nav-link nav-item font-weight-semi-bold ml-2">Teachers Reg</a>
                             <a href="contact.html" class="nav-item nav-link font-weight-semi-bold ml-2">Contact</a>
+                            <a href="admin.php" class="nav-item nav-link font-weight-semi-bold ml-2">Admin</a>
                         </div>
-                        <a class="btn btn-primary py-2 px-4 ml-auto d-none d-lg-block" href="https://wa.me/+923105894558">Join Now</a>
+                        <a class="btn btn-primary py-2 px-4 ml-auto d-none d-lg-block" href="https://wa.me/+923190964392">Join Now</a>
                     </div>
                 </nav>
             </div>
