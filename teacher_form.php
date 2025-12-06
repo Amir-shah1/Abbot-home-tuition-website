@@ -153,6 +153,36 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         .info-box i {
             color: var(--primary);
         }
+
+        #tuition{
+            color: #44425A;
+            font-weight: bold;
+        }
+
+        #menu:hover{
+            color: #e55a00;
+        }
+
+        #menu{
+            color: #44425A;
+            margin-top: 12px;
+            font-size: 18px;
+            font-weight: 600;
+            padding-left: 14px;
+        }
+
+        #subject{
+            background-color: #ffffff;
+        }
+
+        #join{
+            margin-top: 12px;
+        }
+
+        #office{
+            color: #44425A;
+            font-weight: 600;
+        }
     </style>
 </head>
 
@@ -161,15 +191,15 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <div class="container-fluid d-none d-lg-block">
         <div class="row align-items-center py-4 px-xl-5">
             <div class="col-lg-3">
-                <a href="index.html" class="text-decoration-none">
-                    <h2 class="m-0"><span class="text-primary">Abbott </span>Tuitions</h2>
+                <a href="./index.html" class="text-decoration-none">
+                    <h2 class="m-0"  id="tuition"><span class="text-primary">Abbott </span>Tuitions</h2>
                 </a>
             </div>
             <div class="col-lg-3 text-right">
                 <div class="d-inline-flex align-items-center">
                     <i class="fa fa-2x fa-map-marker-alt text-primary mr-3"></i>
                     <div class="text-left">
-                        <h6 class="font-weight-semi-bold mb-1">Our Office</h6>
+                        <h6 id= "office" class="font-weight-semi-bold mb-1">Our Office</h6>
                         <small>Kaghan Colony Mandia, Abbottabad</small>
                     </div>
                 </div>
@@ -178,7 +208,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 <div class="d-inline-flex align-items-center">
                     <i class="fa fa-2x fa-envelope text-primary mr-3"></i>
                     <div class="text-left">
-                        <h6 class="font-weight-semi-bold mb-1">Email Us</h6>
+                        <h6 id= "office" class="font-weight-semi-bold mb-1">Email Us</h6>
                         <small>abbotthometuitions@gmail.com</small>
                     </div>
                 </div>
@@ -187,8 +217,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 <div class="d-inline-flex align-items-center">
                     <i class="fa fa-2x fa-phone text-primary mr-3"></i>
                     <div class="text-left">
-                        <h6 class="font-weight-semi-bold mb-1">Call Us</h6>
-                        <a href="https://wa.me/+923190964392"><small>+92 319 0964392</small></a>
+                        <h6 id= "office" class="font-weight-semi-bold mb-1">Call Us</h6>
+                        <a href="https://wa.me/+92 319 0964392"><small >+92 319 0964392</small></a>
                     </div>
                 </div>
             </div>
@@ -200,37 +230,38 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <div class="container-fluid">
         <div class="row border-top px-xl-5">
             <div class="col-lg-3 d-none d-lg-block">
-                <a class="d-flex align-items-center justify-content-between bg-secondary w-100 text-decoration-none" data-toggle="collapse" href="#navbar-vertical" style="height: 67px; padding: 0 30px;">
+                <a id="subject" class="d-flex align-items-center justify-content-between w-100 text-decoration-none" data-toggle="collapse" href="#navbar-vertical" style="height: 67px; padding: 0 30px; background-color: #f2f1f8;">
                     <h5 class="text-primary m-0"><i class="fa fa-book-open mr-2"></i>Subjects</h5>
                     <i class="fa fa-angle-down text-primary"></i>
                 </a>
                 <nav class="collapse position-absolute navbar navbar-vertical navbar-light align-items-start p-0 border border-top-0 border-bottom-0 bg-light" id="navbar-vertical" style="width: calc(100% - 30px); z-index: 9;">
                     <div class="navbar-nav w-100">
-                        <a href="#" class="nav-item nav-link">Computer Science</a>
-                        <a href="#" class="nav-item nav-link">Quranic Studies</a>
-                        <a href="#" class="nav-item nav-link">Language Art</a>
-                        <a href="#" class="nav-item nav-link">Mathematics</a>
-                        <a href="#" class="nav-item nav-link">Science</a>
+                        <a href="" class="nav-item nav-link">Computer Science</a>
+                        <a href="" class="nav-item nav-link">Quranic Studies</a>
+                        <a href="" class="nav-item nav-link">Language Art</a>
+                        <a href="" class="nav-item nav-link">Mathematics</a>
+                        <a href="" class="nav-item nav-link">Science</a>
                     </div>
                 </nav>
             </div>
             <div class="col-lg-9">
                 <nav class="navbar navbar-expand-lg bg-light navbar-light py-3 py-lg-0 px-0">
-                    <a href="index.html" class="text-decoration-none d-block d-lg-none">
+                    <a href="" class="text-decoration-none d-block d-lg-none">
                         <h1 class="m-0"><span class="text-primary">Abbott</span> Tuitions</h1>
                     </a>
                     <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
                         <span class="navbar-toggler-icon"></span>
                     </button>
                     <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
-                        <div class="navbar-nav py-0">
-                            <a href="index.html" class="nav-item nav-link font-weight-semi-bold ml-2">Home</a>
-                            <a href="about.html" class="nav-item nav-link font-weight-semi-bold ml-2">About</a>
-                            <a href="student_form.php" class="nav-item nav-link font-weight-semi-bold ml-2">Student</a>
-                            <a href="admin.php" class="nav-link nav-item font-weight-semi-bold ml-2">Admin</a>
-                            <a href="contact.html" class="nav-item nav-link font-weight-semi-bold ml-2">Contact</a>
+                        <div class="navbar-nav py-0" >
+                            <a id="menu" href="index.html" class="nav-item nav-link ml-2 mx-2">Home</a>
+                            <a id="menu" href="about.html" class="nav-item nav-link ml-2 mx-2">About</a>
+                            <a id="menu" href="student_form.php" class="nav-item nav-link ml-2 mx-2">Students Reg</a>
+                            <a id="menu" href="teacher_form.php" class="nav-link nav-item ml-2 mx-2">Teachers Reg</a>
+                            <a id="menu" href="contact.html" class="nav-item nav-link ml-2 mx-2">Contact</a>
+                            <a id="menu" href="admin.php" class="nav-item nav-link ml-2 mx-2">Admin</a>
                         </div>
-                        <a class="btn btn-primary py-2 px-4 ml-auto d-none d-lg-block" href="https://wa.me/+923105894558">Join Now</a>
+                        <a id="join"class="btn btn-primary py-2 px-4 ml-auto d-none d-lg-block" href="https://wa.me/+923190964392">Join Now</a>
                     </div>
                 </nav>
             </div>
